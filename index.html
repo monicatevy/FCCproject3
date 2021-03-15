@@ -54,7 +54,7 @@
          </p>
        </article>
        <article>
-         <h3>Un réaménagement respecteux du patrimoine naturel</h3></br>
+         <h2>Un réaménagement respecteux du patrimoine naturel</h2></br>
          <figure>
            <img src="images/maisons-japonaises.jpg" alt="Maisons japonaises">
            <figcaption>Le Département des Hauts-de-Seine s’est engagé depuis de nombreuses années dans la restauration et la conservation du patrimoine du Jardin du musée. Les deux maisons japonaises, importées en France à la fin du XIXe siècle, ont ainsi rénovées en 2015-2016, grâce au travail de Maîtres charpentiers japonais spécialisés dans la restauration de bâtiments patrimoniaux.</figcaption>
@@ -65,7 +65,7 @@
          </p>
        </article>
        <article id="lejardin-article-3">
-         <h4>Un jardin sublimé par la lumière</h4></br>
+         <h2>Un jardin sublimé par la lumière</h2></br>
          <figure>
            <img src="images/jardin-lumiere.jpg" alt="Jardin lumière">
            <figcaption>Mise en lumière nocturne</figcaption>
@@ -79,11 +79,102 @@
        </article>
      </section>
      <section id="gallerie">
+       <h3>Gallerie</h3>
+       <div class="container-slideshow">
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="images/albert-kahn-7.jpg">
+        </div>
 
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="images/albert-kahn-9.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="images/albert-kahn-8.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="images/albert-kahn-2.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="images/albert-kahn-5.jpg">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="images/albert-kahn-10.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="slideshow-caption-container">
+          <p id="slideshow-caption"></p>
+        </div>
+
+        <div class="slideshow-row">
+          <div class="slideshow-column">
+            <img class="slideshow-demo cursor" src="images/albert-kahn-7.jpg" style="width:100%" onclick="currentSlide(1)" alt="Maisons japonaises">
+          </div>
+          <div class="slideshow-column">
+            <img class="slideshow-demo cursor" src="images/albert-kahn-9.jpg" style="width:100%" onclick="currentSlide(2)" alt="Pont japonais">
+          </div>
+          <div class="slideshow-column">
+            <img class="slideshow-demo cursor" src="images/albert-kahn-8.jpg" style="width:100%" onclick="currentSlide(3)" alt="Ruisseau japonais">
+          </div>
+          <div class="slideshow-column">
+            <img class="slideshow-demo cursor" src="images/albert-kahn-2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Jardin Albert-Kahn en automne">
+          </div>
+          <div class="slideshow-column">
+            <img class="slideshow-demo cursor" src="images/albert-kahn-5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Paysage du parc">
+          </div>
+          <div class="slideshow-column">
+            <img class="slideshow-demo cursor" src="images/albert-kahn-10.jpg" style="width:100%" onclick="currentSlide(6)" alt="Lac du jardin">
+          </div>
+
+        </div>
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("slideshow-demo");
+        var captionText = document.getElementById("slideshow-caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace("active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
      </section>
      <section id="informations">
        <article>
-         <h5>Venir au Musée</h5></br>
+         <h4>Venir au Musée</h4></br>
          <p>Le jardin du Musée départemental Albert-Kahn vous accueille du mardi au dimanche :</p></br>
            <li>De 11h à 18h d'octobre à mars</li>
            <li>De 11h à 19h d'avril à septembre</li></br>
@@ -92,7 +183,7 @@
        </article>
      </section>
      <section id="contact">
-       <article>
+       <article id="contact-article-1">
          <h5>Nous contacter</h5></br>
          <p>Retrouvez dans cette page, tous les moyens pour nous contacter, selon vos besoins que vous soyez un particulier, un professionnel.</p></br>
          <p>Si vous souhaitez :</p></br>
@@ -103,7 +194,7 @@
          <p>Si vous êtes journaliste, pour toutes vos demandes presse ou demande d'autorisation de tournage, contactez le service de presse du Département : <a href="#">https://www.hauts-de-seine.fr/contact-service-presse</a></p></br>
        </article>
        <article id="contact-article-2">
-         <h6>Utilisation des images</h6>
+         <h5>Utilisation des images</h5>
          <p>Leur réutilisation est autorisée dans le cadre d’un usage strictement non commercial tel que précisé à la page réutilisation :</br><a href="#">https://opendata.hauts-de-seine.fr/page/licence-adlp/</a></p></br>
          <p>Si vous souhaitez utiliser les images en haute définition ou les films des collections dans des publications, expositions ou autres productions, vous devez en faire la demande par mail à <a href="#">museekahn@hauts-de-seine.fr</a> en apportant les éléments les plus complets possibles sur l’utilisation envisagée, le contexte d’exploitation et le calendrier.</p></br>
          <p><strong>Merci de bien vouloir noter que ne sommes pas actuellement en mesure de donner suite aux demandes d’images ou de films pour un usage commercial.</strong></p>
