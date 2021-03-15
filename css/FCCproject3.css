@@ -25,13 +25,15 @@ header {
   flex-direction: row;
   justify-content: space-between;
   position: fixed;
+  z-index: 1;
+  width: 100%;
 	padding-top: .4em;
 	padding-bottom: .4em;
 	background-color: #f4f4f4;
   font-family: 'Mulish', sans-serif;
 }
 
-ul {
+#nav-bar, ul {
   list-style: none;
 }
 
@@ -51,25 +53,25 @@ ul {
 
 .nav-list {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   margin-right: 1rem;
 }
 
 #header-img,
-.nav-link a {
+.nav-list a {
 	padding: 1rem 2rem;
 	text-transform: uppercase;
 	text-align: center;
 	display: block;
 }
 
-.nav-link a {
+.nav-list a {
 	color: #34495e;
 	font-size: 0.95em;
 }
 
-.nav-link a:hover {
+.nav-list a:hover {
 	color: #718daa;
 }
 
@@ -88,6 +90,7 @@ header a {
 #video {
   max-width: 80%;
   height: auto;
+  margin-top: 5rem;
 }
 
 h2, h3, h4, h5{
