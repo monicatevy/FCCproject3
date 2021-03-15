@@ -23,17 +23,19 @@
     <link rel="shortcut icon" href="images/bonsai.png">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-logo">
     		<img id="header-img" src="images/bonsai.png" alt="Musée Albert-Kahn Logo">
         <h1 id="header-txt-logo"><a href="#">Musée Albert-Kahn</a></h1>
       </div>
-      <ul class="nav-list">
-          <li class="nav-link"><a href="#lejardin">Le Jardin</a></li>
-          <li class="nav-link"><a href="#gallerie">Gallerie</a></li>
-          <li class="nav-link"><a href="#informations">Informations</a></li>
-          <li class="nav-link"><a href="#contact">Contact</a></li>
-      </ul>
+      <nav id="nav-bar">
+        <ul class="nav-list">
+            <li><a class="nav-link" href="#lejardin">Le Jardin</a></li>
+            <li><a class="nav-link" href="#gallerie">Gallerie</a></li>
+            <li><a class="nav-link" href="#informations">Informations</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 	   </header>
      <div class="container">
        <video id="video" controls autoplay muted>
@@ -183,17 +185,16 @@
        </article>
      </section>
      <section id="contact">
-       <article id="contact-article-1">
-         <h5>Nous contacter</h5></br>
-         <p>Retrouvez dans cette page, tous les moyens pour nous contacter, selon vos besoins que vous soyez un particulier, un professionnel.</p></br>
-         <p>Si vous souhaitez :</p></br>
-           <li>vous renseigner sur le musée ou les collections (jardin et autochromes) : <a href="#">museealbertkahn@hauts-de-seine.fr</a></li>
-           <li>réserver un atelier ou une visite : <a href="#">accueilmak@hauts-de-seine.fr</a></li>
-           <li>réserver un atelier ou une visite pour des scolaires : <a href="#">museekahn-scolaire@hauts-de-seine.fr</a></li>
-           <li>privatiser le jardin pour un évènement : <a href="#">vdelacour@hauts-de-seine.fr  </a></li></br>
-         <p>Si vous êtes journaliste, pour toutes vos demandes presse ou demande d'autorisation de tournage, contactez le service de presse du Département : <a href="#">https://www.hauts-de-seine.fr/contact-service-presse</a></p></br>
-       </article>
-       <article id="contact-article-2">
+       <h5>Nous contacter</h5>
+       <form id="form" action="https://www.freecodecamp.org/email-submit">
+         <label for="name">Nom</label>
+         <input type="text" name="name" placeholder="votre nom"></br></br>
+         <label for="email">Email<span class="small">*</span></label>
+         <input id="email" type="email" name="email" placeholder="votre email"required></br></br>
+         <textarea name="message" rows="8" cols="80" placeholder="Votre message"></textarea></br>
+         <input id="submit" type="submit" name="submit">Envoyer</input>
+       </form>
+       <article>
          <h5>Utilisation des images</h5>
          <p>Leur réutilisation est autorisée dans le cadre d’un usage strictement non commercial tel que précisé à la page réutilisation :</br><a href="#">https://opendata.hauts-de-seine.fr/page/licence-adlp/</a></p></br>
          <p>Si vous souhaitez utiliser les images en haute définition ou les films des collections dans des publications, expositions ou autres productions, vous devez en faire la demande par mail à <a href="#">museekahn@hauts-de-seine.fr</a> en apportant les éléments les plus complets possibles sur l’utilisation envisagée, le contexte d’exploitation et le calendrier.</p></br>
