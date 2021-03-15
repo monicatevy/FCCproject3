@@ -301,7 +301,7 @@ footer {
           Media Queries
 ==================================== */
 
-@media (max-width: 833px) {
+@media (max-width: 929px) {
 
   header {
     display: flex;
@@ -309,22 +309,80 @@ footer {
   }
 
   .header-logo {
-    margin: 5px 0 20px 0;
+    margin: 0 0 0.5rem 0;
     display: flex;
     flex-direction: column;
   }
 
+  #header-txt-logo {
+    font-size: 1.5rem;
+  }
+
   #header-img {
-    width: 120px;
+    width: 125px;
   }
 
 	.nav-list {
-    margin: 0 0 5px 0;
+    margin: 0 0 0 0;
 		display: flex;
     flex-direction: column;
 	}
 
   .nav-link a {
-  	font-size: 0.9em;
+  	font-size: 1em;
+    padding: 0.3rem 2rem;
   }
+
+  #video {
+    max-width: 110%;
+    height: auto;
+  }
+
+  h2, h3, h4, h5{
+    font-size: 1.8rem;
+  }
+
+  section p, section li, figcaption {
+    font-size: 1.2rem;
+  }
+
+  section {
+    padding: 2rem 5rem 4rem 5rem;
+    margin: 0;
+  }
+
+  article {
+    margin-bottom: 5rem;
+  }
+
+  .mySlides img {
+    width: 608px; /* width of container */
+    height: 400px; /* height of container */
+  }
+
+  #slideshow-caption {
+    font-size: 0.9rem;
+  }
+
+  .footer-list, #copyright {
+    justify-content: center;
+  }
+
+  .scroll-to-top {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+
+    bottom: 10rem;
+    right: 20px;
+  }
+}
+
+@media (max-width: 376px) {
+
+  section {
+    margin: 0;
+  }
+  
 }
