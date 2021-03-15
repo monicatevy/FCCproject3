@@ -108,7 +108,7 @@ article {
   margin-bottom: 5rem;
 }
 
-#lejardin-article-3, #contact article, #informations article {
+#lejardin-article-3, #informations article {
   margin-bottom: 0rem;
 }
 
@@ -244,8 +244,7 @@ img {
 }
 
 form {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin: 3rem 40% 0rem 0rem;
 }
 
 .small {
@@ -253,9 +252,34 @@ form {
   color: red;
 }
 
-textarea {
-  padding: 10px 10px;
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container-contact-form {
   border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 footer {
@@ -401,22 +425,3 @@ footer {
   }
 
 }
-
-/*
-
-<p>Retrouvez dans cette page, tous les moyens pour nous contacter, selon vos besoins que vous soyez un particulier, un professionnel.</p></br>
-<p>Si vous souhaitez :</p></br>
-  <li>vous renseigner sur le musée ou les collections (jardin et autochromes) : <a href="#">museealbertkahn@hauts-de-seine.fr</a></li>
-  <li>réserver un atelier ou une visite : <a href="#">accueilmak@hauts-de-seine.fr</a></li>
-  <li>réserver un atelier ou une visite pour des scolaires : <a href="#">museekahn-scolaire@hauts-de-seine.fr</a></li>
-  <li>privatiser le jardin pour un évènement : <a href="#">vdelacour@hauts-de-seine.fr  </a></li></br>
-<p>Si vous êtes journaliste, pour toutes vos demandes presse ou demande d'autorisation de tournage, contactez le service de presse du Département : <a href="#">https://www.hauts-de-seine.fr/contact-service-presse</a></p></br>
-</article>
-<article id="contact-article-2">
-<h5>Utilisation des images</h5>
-<p>Leur réutilisation est autorisée dans le cadre d’un usage strictement non commercial tel que précisé à la page réutilisation :</br><a href="#">https://opendata.hauts-de-seine.fr/page/licence-adlp/</a></p></br>
-<p>Si vous souhaitez utiliser les images en haute définition ou les films des collections dans des publications, expositions ou autres productions, vous devez en faire la demande par mail à <a href="#">museekahn@hauts-de-seine.fr</a> en apportant les éléments les plus complets possibles sur l’utilisation envisagée, le contexte d’exploitation et le calendrier.</p></br>
-<p><strong>Merci de bien vouloir noter que ne sommes pas actuellement en mesure de donner suite aux demandes d’images ou de films pour un usage commercial.</strong></p>
-</article>
-
- */

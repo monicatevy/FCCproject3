@@ -184,20 +184,19 @@
      </section>
      <section id="contact">
        <h5>Nous contacter</h5>
-       <form id="form" action="https://www.freecodecamp.org/email-submit">
-         <label for="name">Nom</label>
-         <input type="text" name="name" placeholder="votre nom"></br></br>
+
+       <form id="form">
+         <label for="nom">Nom</label>
+         <input type="text" id="nom" name="nom" placeholder="Votre nom..">
+
          <label for="email">Email<span class="small">*</span></label>
-         <input id="email" type="email" name="email" placeholder="votre email"required></br></br>
-         <textarea name="message" rows="8" cols="80" placeholder="Votre message"></textarea></br>
-         <input id="submit" type="submit" value="Envoyer"></input>
+         <input type="text" id="email" name="email" placeholder="Votre email..">
+
+         <textarea id="message" name="message" placeholder="Votre message.." style="height:200px" required></textarea>
+
+         <input type="submit" value="Envoyer">
        </form>
-       <article>
-         <h5>Utilisation des images</h5>
-         <p>Leur réutilisation est autorisée dans le cadre d’un usage strictement non commercial tel que précisé à la page réutilisation :</br><a href="#">https://opendata.hauts-de-seine.fr/page/licence-adlp/</a></p></br>
-         <p>Si vous souhaitez utiliser les images en haute définition ou les films des collections dans des publications, expositions ou autres productions, vous devez en faire la demande par mail à <a href="#">museekahn@hauts-de-seine.fr</a> en apportant les éléments les plus complets possibles sur l’utilisation envisagée, le contexte d’exploitation et le calendrier.</p></br>
-         <p><strong>Merci de bien vouloir noter que ne sommes pas actuellement en mesure de donner suite aux demandes d’images ou de films pour un usage commercial.</strong></p>
-       </article>
+
      </section>
     <footer>
       <ul class="footer-list">
@@ -212,5 +211,10 @@
       <div/>
       <a class="scroll-to-top" href="#"> <i class="fas fa-arrow-up"></i> </a>
     </footer>
+    <script type="text/javascript">
+      window.onload = function(){
+                      alert("Hi there!\n\nThis page is currently optimized for Chrome (on desktop and ipad. We are working to make this page mobile device friendly. For the best user experience, please use Chrome. Thanks!");
+                      }
+    </script>
   </body>
 </html>
