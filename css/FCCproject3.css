@@ -80,17 +80,14 @@ header a {
   text-decoration: none;
 }
 
-.container {
+.container-video {
   display: flex;
   justify-content: center;
-  padding: 3rem 7rem 3rem 7rem;
-  background: cyan;
+  padding: 7rem 7rem 3rem 7rem;
 }
 
-#video {
-  max-width: 80%;
-  height: auto;
-  margin-top: 5rem;
+.container-main {
+  background: #f4f4f4;
 }
 
 h2, h3, h4, h5{
@@ -124,7 +121,7 @@ figcaption {
 }
 
 #lejardin {
-  background: lightpink;
+  background: #f4f4f4;
 }
 
 #lejardin img {
@@ -133,7 +130,7 @@ figcaption {
 }
 
 #gallerie {
-  background: lightgreen;
+  background: #f4f4f4;
 }
 
 img {
@@ -236,11 +233,11 @@ img {
 }
 
 #informations {
-  background: Papayawhip;
+  background: #f4f4f4;
 }
 
 #contact {
-  background: lightblue;
+  background: #f4f4f4;
 }
 
 form {
@@ -252,7 +249,7 @@ form {
   color: red;
 }
 
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -316,8 +313,8 @@ footer {
   justify-content: flex-end;
   align-items: center;
   padding: 1rem 2rem;
-  background: lightgray;
-  color: gray;
+  background: #f4f4f4;
+  color: #34495e;
 }
 
 .scroll-to-top {
@@ -348,17 +345,17 @@ footer {
   }
 
   .header-logo {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.2rem 0;
     display: flex;
     flex-direction: column;
   }
 
   #header-txt-logo {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   #header-img {
-    width: 125px;
+    width: 100px;
   }
 
 	.nav-list {
@@ -367,14 +364,18 @@ footer {
     flex-direction: column;
 	}
 
-  .nav-link a {
-  	font-size: 1em;
-    padding: 0.3rem 2rem;
+  .nav-list a {
+  	font-size: 0.7em;
+    padding: 0.2rem 2rem;
   }
 
-  #video {
-    max-width: 110%;
-    height: auto;
+  .container-video {
+    padding-top: 14rem;
+  }
+
+  iframe {
+    width: 560px;
+    height: 315px;
   }
 
   h2, h3, h4, h5{
@@ -399,8 +400,17 @@ footer {
     height: 400px; /* height of container */
   }
 
+  .slideshow-demo {
+    width: 102px; /* width of container */
+    height: 66px; /* height of container */
+  }
+
   #slideshow-caption {
     font-size: 0.9rem;
+  }
+
+  form {
+    margin: 3rem 0 0rem 0rem;
   }
 
   .footer-list, #copyright {
@@ -416,12 +426,4 @@ footer {
     bottom: 10rem;
     right: 20px;
   }
-}
-
-@media (max-width: 376px) {
-
-  section {
-    margin: 0;
-  }
-
 }
